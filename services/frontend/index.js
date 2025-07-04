@@ -231,7 +231,7 @@ function loadReviewCounts() {
 document.addEventListener('DOMContentLoaded', function () {
     const books = document.querySelector('.books');
 
-    fetch('/api/products')
+    fetch('http://localhost:3000/products')
         .then((data) => {
             if (data.ok) {
                 return data.json();
